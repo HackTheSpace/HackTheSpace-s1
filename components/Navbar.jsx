@@ -168,7 +168,7 @@ const Navbar = () => {
         </div>
         <div className="mlh-flag">
           <a href="https://hackthespace-1.devfolio.co/" target="_blank">
-            <img src="/images/navbar/hts_flag.png" alt="mlh hack the space" />
+            <img src="/images/navbar/hts_flag_2024.png" alt="mlh hack the space" />
           </a>
         </div>
       </div>
