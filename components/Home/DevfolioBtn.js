@@ -1,61 +1,61 @@
 import React, { useEffect, useState, useRef } from "react";
 
 const DevfolioBtn = () => {
-  const devfolioRef = useRef(null);
-  const [retryCount, setRetryCount] = useState(0);
-  const [maxRetries, setMaxRetries] = useState(5);
+  // const devfolioRef = useRef(null);
+  // const [retryCount, setRetryCount] = useState(0);
+  // const [maxRetries, setMaxRetries] = useState(5);
 
-  // const [showPlaceholder, setShowPlaceholder] = useState(false);
+  // // const [showPlaceholder, setShowPlaceholder] = useState(false);
 
-  const scriptUrl = "https://apply.devfolio.co/v2/sdk.js";
+  // const scriptUrl = "https://apply.devfolio.co/v2/sdk.js";
 
-  function loadExternalScript(scriptUrl, callback) {
-    const script = document.createElement("script");
-    script.src = scriptUrl;
-    script.async = true;
-    script.defer = true;
-    script.onerror = callback;
-    document.body.appendChild(script);
-  }
+  // function loadExternalScript(scriptUrl, callback) {
+  //   const script = document.createElement("script");
+  //   script.src = scriptUrl;
+  //   script.async = true;
+  //   script.defer = true;
+  //   script.onerror = callback;
+  //   document.body.appendChild(script);
+  // }
 
-  useEffect(() => {
-    function handleScriptError() {
-      if (
-        devfolioRef.current.children[0].children.length === 0 &&
-        retryCount < maxRetries
-      ) {
-        let count = retryCount + 1;
-        setRetryCount(count);
+  // useEffect(() => {
+  //   function handleScriptError() {
+  //     if (
+  //       devfolioRef.current.children[0].children.length === 0 &&
+  //       retryCount < maxRetries
+  //     ) {
+  //       let count = retryCount + 1;
+  //       setRetryCount(count);
 
-        const retryInterval = Math.pow(5, retryCount) * 2000; // Exponential backoff in milliseconds
+  //       const retryInterval = Math.pow(5, retryCount) * 2000; // Exponential backoff in milliseconds
 
-        // console.log(`Retrying in ${retryInterval}ms, attempt ${retryCount}`);
+  //       // console.log(`Retrying in ${retryInterval}ms, attempt ${retryCount}`);
 
-        setTimeout(() => {
-          loadExternalScript(scriptUrl, handleScriptError);
-        }, retryInterval);
-      } else {
-        console.log(
-          "Max retry attempts reached. Unable to load external script."
-        );
-      }
-    }
+  //       setTimeout(() => {
+  //         loadExternalScript(scriptUrl, handleScriptError);
+  //       }, retryInterval);
+  //     } else {
+  //       console.log(
+  //         "Max retry attempts reached. Unable to load external script."
+  //       );
+  //     }
+  //   }
 
-    // window.onload = handleScriptError();
-    handleScriptError();
+  //   // window.onload = handleScriptError();
+  //   handleScriptError();
 
-    // console.log(devfolioRef.current.children[0].children.length);
-    // console.log(devfolioRef.current.children[0]);
-  }, [devfolioRef, retryCount]);
+  //   // console.log(devfolioRef.current.children[0].children.length);
+  //   // console.log(devfolioRef.current.children[0]);
+  // }, [devfolioRef, retryCount]);
 
   return (
-    <div className="butHolder" ref={devfolioRef}>
-      <div
+    <div className="butHolder">
+      {/* <div
         className="apply-button"
         data-hackathon-slug="hackthespace-1"
         data-button-theme="light"
         style={{ height: "56px", width: "305px" }}
-      ></div>
+      ></div> */}
       <button type="button" className="Btn zinc-bg">
         <a href="https://discord.gg/FJKTSgdxPX" target="_blank">
           <div className="gradient-mask blue-bg"></div>

@@ -30,7 +30,7 @@ const Landing = () => {
           />
         </div>
         <Typewriter />
-        <Countdown />
+        {/* <Countdown /> */}
 
         <DevfolioBtn />
       </div>

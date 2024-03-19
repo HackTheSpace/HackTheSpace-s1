@@ -83,7 +83,7 @@ const Navbar = () => {
             >
               <a href="https://hackthespace-1.devfolio.co/" target="_blank">
                 <Image
-                  src="/images/navbar/hts_flag.png"
+                  src="/images/navbar/hts_flag_2024.png"
                   alt="mlh hack the space"
                   width={100}
                   height={100}
