@@ -20,7 +20,7 @@ const Layout = ({ children }) => {
 
         <link
           rel="canonical"
-          href="https://www.hackthespace.co/"
+          href="https://s1.hackthespace.co/"
           key="canonical"
         />
 
@@ -51,7 +51,7 @@ const Layout = ({ children }) => {
         <meta
           property="og:url"
           name="og:url"
-          content="https://www.hackthespace.co/"
+          content="https://s1.hackthespace.co/"
         />
 
         <meta name="twitter:title" content="Hack The Space" />
@@ -59,8 +59,8 @@ const Layout = ({ children }) => {
           name="twitter:description"
           content="A 24-hour immersive hackathon for all the nerds out there✨. Empowering young minds😇. Turn Ideas into Impact!🚀"
         />
-        <meta name="twitter:site" content="https://hackthespace.co" />
-        <meta name="twitter:domain" content="https://hackthespace.co" />
+        <meta name="twitter:site" content="https://s1.hackthespace.co" />
+        <meta name="twitter:domain" content="https://s1.hackthespace.co" />
         <meta
           name="twitter:image"
           content="https://res.cloudinary.com/dmwxnrn8o/image/upload/b_rgb:000000/v1686922356/hackthespace/logo-main_lrdsjp.webp"
